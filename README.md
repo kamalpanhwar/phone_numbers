@@ -30,6 +30,7 @@ machine.
 ```
 git clone 
 ```
+
 Now cd to this directory and run following command. Mak
 
 ```
@@ -64,7 +65,23 @@ Use following commands to run this application.
 rails s
 ```
 
-Now you can access website on http://localhost:3000/checkphone/123123123
+### Accessing using Swagger documentation api
+
+You can use builtin Swagger Api viewer with following commands on your browser
+
+```
+http://localhost:3000/api-docs/index.html
+```
+
+### You can user curl also with following parameters
+
+```
+curl -X GET "http://localhost:3000/api/v1/checknumber/###YOURNUMBER###" -H "accept: application/json"
+```
+
+
+Now you can access website on
+http://localhost:3000/api/v1/checknumber/###YOURNUMBER###
 
 ### How to contribute
 Please help me correct all codes and other information. I am soon going to
