@@ -10,6 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20190212115645) do
+
+  create_table "cities", force: :cascade do |t|
+    t.integer "country_id"
+    t.string "area"
+    t.integer "area_code"
+    t.boolean "numbertype"
+    t.integer "mnc"
+    t.integer "mnci"
+    t.string "network"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_cities_on_country_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+    t.integer "code"
+    t.integer "e164"
+    t.integer "mcc"
+    t.integer "mcci"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
