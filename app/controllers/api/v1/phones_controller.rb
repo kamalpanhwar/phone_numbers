@@ -18,11 +18,7 @@ class Api::V1::PhonesController < ApplicationController
 
     country = Country.where(:code => phnumber['code']).first
     phnumber['mcc'] = country['mcc']
-
     phnumber['mcci'] = country['mcci']
-    p country
-
-
     render json: phnumber 
 
   end
