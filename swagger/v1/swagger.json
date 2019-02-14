@@ -5,7 +5,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/v1/checknumber/{id}": {
+    "/api/v1/checknumber/{phone_number}": {
       "get": {
         "summary": "Retrieve phone number",
         "tags": [
@@ -16,7 +16,7 @@
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "phone_number",
             "in": "path",
             "type": "string",
             "required": true
@@ -33,7 +33,7 @@
                 }
               },
               "required": [
-                "id",
+                "phone number",
                 "name",
                 "status"
               ]
