@@ -72,6 +72,9 @@ You can use builtin Swagger Api viewer with following commands on your browser
 ```
 http://localhost:3000/api-docs/index.html
 ```
+![View of swagger api
+documentation](https://github.com/kamalpanhwar/phone_numbers/blob/master/snapshot_swagger.png)
+
 
 ### You can user curl also with following parameters
 
